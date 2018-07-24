@@ -52,9 +52,10 @@
     <Property Name="CustomerID" Type="Int32" />
     <Property Name="MovieID" Type="Int32" />
     <Property Name="RentalDate" Type="DateTime" Precision="3" />
-    <Property Name="DueDate" Type="DateTime" Precision="3" />
+    <Property Name="DueDate" Type="DateTime" Precision="3" Nullable="false" />
     <NavigationProperty Name="Customer" Relationship="Self.FK_Rentals_Customers" FromRole="Rentals" ToRole="Customers" />
     <NavigationProperty Name="Movy" Relationship="Self.FK_Rentals_Movies" FromRole="Rentals" ToRole="Movies" />
+    <Property Name="ReturnDate" Type="DateTime" Precision="3" />
   </EntityType>
   <Association Name="FK_Addresses_Customers">
     <End Role="Customers" Type="Self.Customer" Multiplicity="0..1" />

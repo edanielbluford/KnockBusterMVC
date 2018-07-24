@@ -18,7 +18,8 @@ namespace KnockBusterMVC
         public Nullable<int> CustomerID { get; set; }
         public Nullable<int> MovieID { get; set; }
         public Nullable<System.DateTime> RentalDate { get; set; }
-        public Nullable<System.DateTime> DueDate { get; set; }
+        public System.DateTime DueDate { get; set; }
+        public Nullable<System.DateTime> ReturnDate { get; set; }
     
         public virtual Customer Customer { get; set; }
         public virtual Movy Movy { get; set; }

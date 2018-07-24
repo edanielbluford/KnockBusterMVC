@@ -46,7 +46,8 @@
     <Property Name="CustomerID" Type="int" />
     <Property Name="MovieID" Type="int" />
     <Property Name="RentalDate" Type="datetime" />
-    <Property Name="DueDate" Type="datetime" />
+    <Property Name="DueDate" Type="datetime" Nullable="false" />
+    <Property Name="ReturnDate" Type="datetime" />
   </EntityType>
   <Association Name="FK_Addresses_Customers">
     <End Role="Customers" Type="Self.Customers" Multiplicity="0..1" />

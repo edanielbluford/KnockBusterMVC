@@ -46,6 +46,7 @@
     <EntitySetMapping Name="Rentals">
       <EntityTypeMapping TypeName="RentalSystemDBModel.Rental">
         <MappingFragment StoreEntitySet="Rentals">
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
           <ScalarProperty Name="RentalID" ColumnName="RentalID" />
           <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
           <ScalarProperty Name="MovieID" ColumnName="MovieID" />
